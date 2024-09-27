@@ -1,6 +1,6 @@
 # 저를 소개합니다 😎
 
-<img src="../img/kang.jpeg" width="250" alt="이강현의 사진"/>
+<img src="../img/kang.jpeg" width="250" alt="이강현의 사진"/>
 
 안녕하세요 ! 저는 인천에 거주하고 있는 28살 이강현입니다 😉 잘 부탁드려요 !
 
