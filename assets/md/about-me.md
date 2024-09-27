@@ -6,7 +6,7 @@
 
 > ## kang.html 😎
 
-    <!DOCTYPE html>
+    <!DOCTYPE khlee's html>
     <kanghyeon>
       <hobby>
         저는 자전거 타기와 노래 부르기, 그리고 드라이브를 좋아합니다 🚘
