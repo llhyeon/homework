@@ -42,21 +42,23 @@ figure {
   content: "";
   background-color: #dbdbdb;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 17.78px;
+  height: 17.78px;
   position: absolute;
   right: -2px;
   bottom: 5px;
+  border: 1px solid white;
 }
 .flex-green-circle::after {
   content: "";
   background-color: #4cfe88;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 17.78px;
+  height: 17.78px;
   position: absolute;
   right: -2px;
   bottom: 5px;
+  border: 1px solid white;
 }
 
 img {
@@ -86,23 +88,25 @@ img {
 .state-green {
   position: relative;
   background-color: #4cfe88;
-  width: 18px;
-  height: 18px;
+  width: 17.78px;
+  height: 17.78px;
   border-radius: 50%;
   margin: 0;
   float: right;
   margin-top: 50px;
   margin-left: -20px;
+  border: 1px solid white;
 }
 
 .state-gray {
   position: relative;
   background-color: #dbdbdb;
-  width: 18px;
-  height: 18px;
+  width: 17.78px;
+  height: 17.78px;
   border-radius: 50%;
   margin: 0;
   float: right;
   margin-top: 50px;
   margin-left: -20px;
+  border: 1px solid white;
 }
