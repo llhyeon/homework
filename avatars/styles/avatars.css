@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(to right, #ffffff, #dddddd);
+  position: relative;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* flex 속성을 통한 구현 (20~64) */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+figure {
+  margin: 10px;
+  position: relative;
+}
+
+.flex-gray-circle::after {
+  content: "";
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: -2px;
+  bottom: 5px;
+}
+.flex-green-circle::after {
+  content: "";
+  background-color: #4cfe88;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: -2px;
+  bottom: 5px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+/* float을 통한 구현 (68~108) */
+
+.float-container {
+  text-align: center;
+}
+
+.float-line-container {
+  padding: 0;
+}
+
+.img-container {
+  display: inline-block;
+  padding: 0;
+  margin: 10px;
+}
+
+.img-container img {
+  border-radius: 50%;
+}
+
+.state-green {
+  position: relative;
+  background-color: #4cfe88;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0;
+  float: right;
+  margin-top: 50px;
+  margin-left: -20px;
+}
+
+.state-gray {
+  position: relative;
+  background-color: #dbdbdb;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0;
+  float: right;
+  margin-top: 50px;
+  margin-left: -20px;
+}
