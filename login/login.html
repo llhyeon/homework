@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naver Login</title>
+    <link rel="stylesheet" href="../login/styles/login.css" />
+  </head>
+  <body>
+    <div class="naver">
+      <h1 class="logo">
+        <a href="https://www.naver.com" aria-label="네이버 이동링크">
+          <figure class="logo__figure">
+            <img role="img" src="../assets/login/naver-logo.svg" alt="" />
+            <figcaption class="sr-only">네이버 로고 이미지</figcaption>
+          </figure>
+        </a>
+      </h1>
+      <form action="/" method="post" class="login-form">
+        <div class="login">
+          <label for="login__email" class="email-label sr-only">아이디</label>
+          <input type="email" class="login__email" name="email" required placeholder="아이디" />
+          <label for="login__password" class="password-labe sr-only">비밀번호</label>
+          <input type="password" class="login__password" name="password" required placeholder="비밀번호" />
+        </div>
+        <button type="submit">로그인</button>
+        <div class="keeping-login">
+          <img aria-label="로그인 유지 체크버튼" src="../assets/login/checkbox-unchecked.svg" alt="로그인 상태 체크안함" />
+          <span>로그인 상태 유지</span>
+          <!-- <img src="../assets/login/checkbox-checked.svg" alt="로그인 상태 체크함" /> -->
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
