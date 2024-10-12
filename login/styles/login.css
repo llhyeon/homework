@@ -101,16 +101,61 @@ button {
   text-align: center;
 }
 
-.keeping-login {
-  margin-block-start: 0.625rem;
+.about-login {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: end;
+  padding-inline: 20px;
+  inline-size: 100%;
   align-items: center;
-  color: var(--main-color);
-  vertical-align: middle;
+  justify-content: end;
+  margin-block-start: 0.625rem;
 
-  img {
+  .ip {
+    display: none;
+    color: var(--main-color);
+    font-size: var(--font-size);
+  }
+
+  .keeping-login {
+    display: flex;
+    align-items: center;
+  }
+
+  .keeping-login__checkbox {
+    display: none;
+  }
+
+  .keeping-login__check-img {
+    display: inline-block;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
     margin-inline-end: 0.3125rem;
+    background-image: url("../../assets/login/checkbox-unchecked.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  input[id="checkbox"]:checked + label {
+    display: inline-block;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    margin-inline-end: 0.3125rem;
+    background-image: url("../../assets/login/checkbox-checked.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    inline-size: 500px;
+    justify-content: space-between;
+    align-items: center;
+
+    .ip {
+      display: inline;
+
+      .ip-security-link {
+        text-decoration: none;
+      }
+    }
   }
 }
