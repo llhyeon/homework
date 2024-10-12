@@ -19,6 +19,10 @@ body * {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   margin-block: 100px;
 }
@@ -60,6 +64,16 @@ body {
   flex-direction: column;
   padding-inline: 1.25rem;
 
+  :user-invalid + p {
+    display: block;
+  }
+
+  .login__invalid {
+    font-size: 0.75rem;
+    color: #ff1414;
+    display: none;
+  }
+
   @media (min-width: 768px) {
     inline-size: 500px;
   }
@@ -89,13 +103,11 @@ body {
   }
 }
 
-/* 버튼 컴포넌트 */
 button {
-  flex-basis: 100%;
-  /* 버튼 agent styling 초기화 */
   all: unset;
+  margin-block-start: 1.25rem;
+  block-size: 2.8125rem;
   font-size: var(--font-size);
-  block-size: 45px;
   color: #fff;
   background: #03cf5d;
   text-align: center;
@@ -151,11 +163,7 @@ button {
     align-items: center;
 
     .ip {
-      display: inline;
-
-      .ip-security-link {
-        text-decoration: none;
-      }
+      display: block;
     }
   }
 }
