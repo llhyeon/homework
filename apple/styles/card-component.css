@@ -6,7 +6,7 @@
   --block-size: var(--size);
   --gap: var(--small-spacing);
 
-  background: image-set(url("../../assets/apple/products/ipad_pro.webp") 1x, url("../../assets/apple/products/ipad_pro_2x.webp")) no-repeat;
+  background: image-set(url("../../assets/apple/products/ipad_pro.webp") 1x, url("../../assets/apple/products/ipad_pro_2x.webp") 2x) no-repeat;
   background-size: cover;
   background-position: center;
   padding-block-start: var(--padding-top);
@@ -18,7 +18,7 @@
   gap: var(--gap);
 
   @media (min-width: 64rem) {
-    background: image-set(url("../../assets/apple/products/ipad_pro_wide.webp") 1x, url("../../assets/apple/products/ipad_pro_wide_2x.webp")) no-repeat;
+    background: image-set(url("../../assets/apple/products/ipad_pro_wide.webp") 1x, url("../../assets/apple/products/ipad_pro_wide_2x.webp") 2x) no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -116,12 +116,12 @@
   @media (min-width: 64rem) {
     --padding-top: var(--extra-large-spacing);
 
-    background: image-set(url("../../assets/apple/products/ipad_air.webp") 1x, url("../../assets/apple/products/ipad_air_2x.webp")) no-repeat;
+    background: image-set(url("../../assets/apple/products/ipad_air.webp") 1x, url("../../assets/apple/products/ipad_air_2x.webp") 2x) no-repeat;
     background-size: cover;
     background-position: center;
   }
 
-  background: image-set(url("../../assets/apple/products/ipad_air_wide.webp") 1x, url("../../assets/apple/products/ipad_air_wide_2x.webp")) no-repeat;
+  background: image-set(url("../../assets/apple/products/ipad_air_wide.webp") 1x, url("../../assets/apple/products/ipad_air_wide_2x.webp") 2x) no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--main-font-color);
@@ -220,7 +220,7 @@
   --block-size: var(--size);
   --gap: var(--small-spacing);
 
-  background: image-set(url("../../assets/apple/products/iphone15_pro.webp") 1x, url("../../assets/apple/products/iphone15_pro_2x.webp")) no-repeat;
+  background: image-set(url("../../assets/apple/products/iphone15_pro.webp") 1x, url("../../assets/apple/products/iphone15_pro_2x.webp") 2x) no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--main-font-color);
@@ -233,7 +233,7 @@
   @media (min-width: 64rem) {
     --padding-top: var(--extra-large-spacing);
 
-    background: image-set(url("../../assets/apple/products/iphone15_pro_wide.webp") 1x, url("../../assets/apple/products/iphone15_pro_wide_2x.webp")) no-repeat;
+    background: image-set(url("../../assets/apple/products/iphone15_pro_wide.webp") 1x, url("../../assets/apple/products/iphone15_pro_wide_2x.webp") 2x) no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -327,7 +327,7 @@
   --block-size: var(--size);
   --gap: var(--small-spacing);
 
-  background: image-set(url("../../assets/apple/products/iphone15.webp") 1x, url("../../assets/apple/products/iphone15_2x.webp")) no-repeat;
+  background: image-set(url("../../assets/apple/products/iphone15.webp") 1x, url("../../assets/apple/products/iphone15_2x.webp") 2x) no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--main-font-color);
@@ -426,7 +426,7 @@
   --block-size: var(--size);
   --gap: var(--small-spacing);
 
-  background: image-set(url("../../assets/apple/products/apple_watch.webp") 1x, url("../../assets/apple/products/apple_watch_2x.webp")) no-repeat;
+  background: image-set(url("../../assets/apple/products/apple_watch.webp") 1x, url("../../assets/apple/products/apple_watch_2x.webp") 2x) no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--main-font-color);
@@ -525,7 +525,7 @@
   --block-size: var(--size);
   --gap: var(--small-spacing);
 
-  background: image-set(url("../../assets/apple/products/macbook_air.webp") 1x, url("../../assets/apple/products/macbook_air_2x.webp")) no-repeat;
+  background: image-set(url("../../assets/apple/products/macbook_air.webp") 1x, url("../../assets/apple/products/macbook_air_2x.webp") 2x) no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--main-font-color);
@@ -624,7 +624,7 @@
   --block-size: var(--size);
   --gap: var(--small-spacing);
 
-  background: image-set(url("../../assets/apple/products/airpods_pro.webp") 1x, url("../../assets/apple/products/airpods_pro_2x.webp")) no-repeat;
+  background: image-set(url("../../assets/apple/products/airpods_pro.webp") 1x, url("../../assets/apple/products/airpods_pro_2x.webp") 2x) no-repeat;
   background-size: cover;
   background-position: center;
   color: var(--main-font-color);
