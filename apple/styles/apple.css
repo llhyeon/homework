@@ -4,7 +4,7 @@
 /* 카드 레이아웃 */
 .grid-wrapper {
   display: grid;
-  grid-template-columns: minmax(200px, auto);
+  grid-template-columns: auto;
   gap: 1rem;
 
   @media (min-width: 64rem) {

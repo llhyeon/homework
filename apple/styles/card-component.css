@@ -24,7 +24,7 @@
   }
 
   .product-name {
-    --main-title-text: var(--large-text);
+    --main-title-text: var(--base-text);
     --margin-top: var(--large-spacing);
 
     margin: var(--margin-top) 0 0 0;
