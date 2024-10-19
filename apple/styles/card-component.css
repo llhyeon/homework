@@ -1,0 +1,718 @@
+@import "./theme.css";
+
+/* 1번 카드 컴포넌트 */
+.card-1 {
+  --main-font-color: var(--white);
+  --block-size: var(--size);
+  --gap: var(--small-spacing);
+
+  background: image-set(url("../../assets/apple/products/ipad_pro.webp") 1x, url("../../assets/apple/products/ipad_pro_2x.webp")) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block-start: var(--padding-top);
+  color: var(--main-font-color);
+  block-size: var(--block-size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--gap);
+
+  @media (min-width: 64rem) {
+    background: image-set(url("../../assets/apple/products/ipad_pro_wide.webp") 1x, url("../../assets/apple/products/ipad_pro_wide_2x.webp")) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-name {
+    --main-title-text: var(--large-text);
+    --margin-top: var(--large-spacing);
+
+    margin: var(--margin-top) 0 0 0;
+    font-size: var(--main-title-text);
+
+    @media (min-width: 64rem) {
+      --main-title-text: var(--extra-large-spacing);
+      --margin-top: var(--extra-large-spacing);
+
+      margin: var(--margin-top) 0 0 0;
+      font-size: var(--main-title-text);
+    }
+  }
+
+  .product-description {
+    --sub-title-text: var(--base-text);
+    --line-height: var(--line-normal);
+    --margin-bottom: var(--x-small-spacing);
+
+    font-size: var(--sub-title-text);
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 64rem) {
+      --sub-title-text: var(--medium-text);
+
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  }
+
+  .release-date {
+    --release-font-size: var(--small-text);
+    --date-color: var(--gray);
+
+    margin: 0;
+    font-size: var(--release-font-size);
+    color: var(--date-color);
+  }
+
+  .about-product {
+    --link-text-color1: var(--white);
+    --link-text-color2: var(--blue-100);
+    --link-font-size: var(--xx-small-text);
+    --link-padding: var(--x-small-spacing);
+    --link-bg-color: var(--blue-100);
+    --link-border-color: var(--blue-100);
+    --link-margin: var(--base-spacing);
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--link-margin);
+
+    a {
+      color: var(--link-text-color);
+      border-radius: 50px;
+      background: var(--link-bg-color);
+      padding: var(--link-padding);
+      font-size: var(--link-font-size);
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        color: var(--link-text-color2);
+        border: 1px solid var(--link-border-color);
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      --link-font-size: var(--x-small-text);
+
+      a {
+        font-size: var(--link-font-size);
+      }
+    }
+  }
+}
+
+/* 2번 카드 컴포넌트 */
+.card-2 {
+  --main-font-color: var(--black);
+  --block-size: var(--size);
+  --gap: var(--small-spacing);
+
+  @media (min-width: 64rem) {
+    --padding-top: var(--extra-large-spacing);
+
+    background: image-set(url("../../assets/apple/products/ipad_air.webp") 1x, url("../../assets/apple/products/ipad_air_2x.webp")) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  background: image-set(url("../../assets/apple/products/ipad_air_wide.webp") 1x, url("../../assets/apple/products/ipad_air_wide_2x.webp")) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--main-font-color);
+  block-size: var(--block-size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--gap);
+
+  .product-name {
+    --main-title-text: var(--large-text);
+    --margin-top: var(--large-spacing);
+
+    margin: var(--margin-top) 0 0 0;
+    font-size: var(--main-title-text);
+
+    @media (min-width: 64rem) {
+      --main-title-text: var(--extra-large-spacing);
+      --margin-top: var(--extra-large-spacing);
+
+      margin: var(--margin-top) 0 0 0;
+      font-size: var(--main-title-text);
+    }
+  }
+
+  .product-description {
+    --sub-title-text: var(--base-text);
+    --line-height: var(--line-normal);
+    --margin-bottom: var(--x-small-spacing);
+
+    font-size: var(--sub-title-text);
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 64rem) {
+      display: flex;
+      flex-flow: row nowrap;
+      --sub-title-text: var(--medium-text);
+    }
+  }
+
+  .release-date {
+    --release-font-size: var(--small-text);
+    --date-color: var(--gray);
+
+    margin: 0;
+    font-size: var(--release-font-size);
+    color: var(--date-color);
+  }
+
+  .about-product {
+    --link-text-color1: var(--white);
+    --link-text-color2: var(--black);
+    --link-font-size: var(--xx-small-text);
+    --link-padding: var(--x-small-spacing);
+    --link-bg-color: var(--black);
+    --link-border-color: var(--black);
+    --link-margin: var(--base-spacing);
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--link-margin);
+
+    a {
+      color: var(--link-text-color1);
+      border-radius: 50px;
+      background: var(--link-bg-color);
+      padding: var(--link-padding);
+      font-size: var(--link-font-size);
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        color: var(--link-text-color2);
+        border: 1px solid var(--link-border-color);
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      --link-font-size: var(--x-small-text);
+
+      a {
+        font-size: var(--link-font-size);
+      }
+    }
+  }
+}
+
+/* 3번 카드 컴포넌트 */
+.card-3 {
+  --main-font-color: var(--white);
+  --block-size: var(--size);
+  --gap: var(--small-spacing);
+
+  background: image-set(url("../../assets/apple/products/iphone15_pro.webp") 1x, url("../../assets/apple/products/iphone15_pro_2x.webp")) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--main-font-color);
+  block-size: var(--block-size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--gap);
+
+  @media (min-width: 64rem) {
+    --padding-top: var(--extra-large-spacing);
+
+    background: image-set(url("../../assets/apple/products/iphone15_pro_wide.webp") 1x, url("../../assets/apple/products/iphone15_pro_wide_2x.webp")) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-name {
+    --main-title-text: var(--large-text);
+    --margin-top: var(--large-spacing);
+
+    margin: var(--margin-top) 0 0 0;
+    font-size: var(--main-title-text);
+
+    @media (min-width: 64rem) {
+      --main-title-text: var(--extra-large-spacing);
+      --margin-top: var(--extra-large-spacing);
+
+      margin: var(--margin-top) 0 0 0;
+      font-size: var(--main-title-text);
+    }
+  }
+
+  .product-description {
+    --sub-title-text: var(--base-text);
+    --line-height: var(--line-normal);
+    --margin-bottom: var(--x-small-spacing);
+
+    font-size: var(--sub-title-text);
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 64rem) {
+      display: flex;
+      flex-flow: row nowrap;
+      --sub-title-text: var(--medium-text);
+    }
+  }
+
+  .release-date {
+    --release-font-size: var(--small-text);
+    --date-color: var(--gray);
+
+    margin: 0;
+    font-size: var(--release-font-size);
+    color: var(--date-color);
+  }
+
+  .about-product {
+    --link-text-color1: var(--white);
+    --link-text-color2: var(--blue-100);
+    --link-font-size: var(--xx-small-text);
+    --link-padding: var(--x-small-spacing);
+    --link-bg-color: var(--blue-100);
+    --link-border-color: var(--blue-100);
+    --link-margin: var(--base-spacing);
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--link-margin);
+
+    a {
+      color: var(--link-text-color1);
+      border-radius: 50px;
+      background: var(--link-bg-color);
+      padding: var(--link-padding);
+      font-size: var(--link-font-size);
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        color: var(--link-text-color2);
+        border: 1px solid var(--link-border-color);
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      --link-font-size: var(--x-small-text);
+
+      a {
+        font-size: var(--link-font-size);
+      }
+    }
+  }
+}
+
+/* 4번 카드 컴포넌트 */
+.card-4 {
+  --main-font-color: var(--black);
+  --block-size: var(--size);
+  --gap: var(--small-spacing);
+
+  background: image-set(url("../../assets/apple/products/iphone15.webp") 1x, url("../../assets/apple/products/iphone15_2x.webp")) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--main-font-color);
+  block-size: var(--block-size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--gap);
+
+  .product-name {
+    --main-title-text: var(--large-text);
+    --margin-top: var(--large-spacing);
+
+    margin: var(--margin-top) 0 0 0;
+    font-size: var(--main-title-text);
+
+    @media (min-width: 64rem) {
+      --main-title-text: var(--extra-large-spacing);
+      --margin-top: var(--extra-large-spacing);
+
+      margin: var(--margin-top) 0 0 0;
+      font-size: var(--main-title-text);
+    }
+  }
+
+  .product-description {
+    --sub-title-text: var(--base-text);
+    --line-height: var(--line-normal);
+    --margin-bottom: var(--x-small-spacing);
+
+    font-size: var(--sub-title-text);
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 64rem) {
+      display: flex;
+      flex-flow: row nowrap;
+      --sub-title-text: var(--medium-text);
+    }
+  }
+
+  .release-date {
+    --release-font-size: var(--small-text);
+    --date-color: var(--gray);
+
+    margin: 0;
+    font-size: var(--release-font-size);
+    color: var(--date-color);
+  }
+
+  .about-product {
+    --link-text-color1: var(--white);
+    --link-text-color2: var(--black);
+    --link-font-size: var(--xx-small-text);
+    --link-padding: var(--x-small-spacing);
+    --link-bg-color: var(--black);
+    --link-border-color: var(--black);
+    --link-margin: var(--base-spacing);
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--link-margin);
+
+    a {
+      color: var(--link-text-color1);
+      border-radius: 50px;
+      background: var(--link-bg-color);
+      padding: var(--link-padding);
+      font-size: var(--link-font-size);
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        color: var(--link-text-color2);
+        border: 1px solid var(--link-border-color);
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      --link-font-size: var(--x-small-text);
+
+      a {
+        font-size: var(--link-font-size);
+      }
+    }
+  }
+}
+
+/* 5번 카드 컴포넌트 */
+.card-5 {
+  --main-font-color: var(--white);
+  --block-size: var(--size);
+  --gap: var(--small-spacing);
+
+  background: image-set(url("../../assets/apple/products/apple_watch.webp") 1x, url("../../assets/apple/products/apple_watch_2x.webp")) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--main-font-color);
+  block-size: var(--block-size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--gap);
+
+  .product-name {
+    --main-title-text: var(--large-text);
+    --margin-top: var(--large-spacing);
+
+    margin: var(--margin-top) 0 0 0;
+    font-size: var(--main-title-text);
+
+    @media (min-width: 64rem) {
+      --main-title-text: var(--extra-large-spacing);
+      --margin-top: var(--extra-large-spacing);
+
+      margin: var(--margin-top) 0 0 0;
+      font-size: var(--main-title-text);
+    }
+  }
+
+  .product-description {
+    --sub-title-text: var(--base-text);
+    --line-height: var(--line-normal);
+    --margin-bottom: var(--x-small-spacing);
+
+    font-size: var(--sub-title-text);
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 64rem) {
+      display: flex;
+      flex-flow: row nowrap;
+      --sub-title-text: var(--medium-text);
+    }
+  }
+
+  .release-date {
+    --release-font-size: var(--small-text);
+    --date-color: var(--gray);
+
+    margin: 0;
+    font-size: var(--release-font-size);
+    color: var(--date-color);
+  }
+
+  .about-product {
+    --link-text-color1: var(--white);
+    --link-text-color2: var(--blue-100);
+    --link-font-size: var(--xx-small-text);
+    --link-padding: var(--x-small-spacing);
+    --link-bg-color: var(--blue-100);
+    --link-border-color: var(--blue-100);
+    --link-margin: var(--base-spacing);
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--link-margin);
+
+    a {
+      color: var(--link-text-color1);
+      border-radius: 50px;
+      background: var(--link-bg-color);
+      padding: var(--link-padding);
+      font-size: var(--link-font-size);
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        color: var(--link-text-color2);
+        border: 1px solid var(--link-border-color);
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      --link-font-size: var(--x-small-text);
+
+      a {
+        font-size: var(--link-font-size);
+      }
+    }
+  }
+}
+
+/* 6번 카드 컴포넌트 */
+.card-6 {
+  --main-font-color: var(--black);
+  --block-size: var(--size);
+  --gap: var(--small-spacing);
+
+  background: image-set(url("../../assets/apple/products/macbook_air.webp") 1x, url("../../assets/apple/products/macbook_air_2x.webp")) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--main-font-color);
+  block-size: var(--block-size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--gap);
+
+  .product-name {
+    --main-title-text: var(--large-text);
+    --margin-top: var(--large-spacing);
+
+    margin: var(--margin-top) 0 0 0;
+    font-size: var(--main-title-text);
+
+    @media (min-width: 64rem) {
+      --main-title-text: var(--extra-large-spacing);
+      --margin-top: var(--extra-large-spacing);
+
+      margin: var(--margin-top) 0 0 0;
+      font-size: var(--main-title-text);
+    }
+  }
+
+  .product-description {
+    --sub-title-text: var(--base-text);
+    --line-height: var(--line-normal);
+    --margin-bottom: var(--x-small-spacing);
+
+    font-size: var(--sub-title-text);
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 64rem) {
+      display: flex;
+      flex-flow: row nowrap;
+      --sub-title-text: var(--medium-text);
+    }
+  }
+
+  .release-date {
+    --release-font-size: var(--small-text);
+    --date-color: var(--gray);
+
+    margin: 0;
+    font-size: var(--release-font-size);
+    color: var(--date-color);
+  }
+
+  .about-product {
+    --link-text-color1: var(--white);
+    --link-text-color2: var(--black);
+    --link-font-size: var(--xx-small-text);
+    --link-padding: var(--x-small-spacing);
+    --link-bg-color: var(--black);
+    --link-border-color: var(--black);
+    --link-margin: var(--base-spacing);
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--link-margin);
+
+    a {
+      color: var(--link-text-color1);
+      border-radius: 50px;
+      background: var(--link-bg-color);
+      padding: var(--link-padding);
+      font-size: var(--link-font-size);
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        color: var(--link-text-color2);
+        border: 1px solid var(--link-border-color);
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      --link-font-size: var(--x-small-text);
+
+      a {
+        font-size: var(--link-font-size);
+      }
+    }
+  }
+}
+
+/* 5번 카드 컴포넌트 */
+.card-7 {
+  --main-font-color: var(--white);
+  --block-size: var(--size);
+  --gap: var(--small-spacing);
+
+  background: image-set(url("../../assets/apple/products/airpods_pro.webp") 1x, url("../../assets/apple/products/airpods_pro_2x.webp")) no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--main-font-color);
+  block-size: var(--block-size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: var(--gap);
+
+  .product-name {
+    --main-title-text: var(--large-text);
+    --margin-top: var(--large-spacing);
+
+    margin: var(--margin-top) 0 0 0;
+    font-size: var(--main-title-text);
+
+    @media (min-width: 64rem) {
+      --main-title-text: var(--extra-large-spacing);
+      --margin-top: var(--extra-large-spacing);
+
+      margin: var(--margin-top) 0 0 0;
+      font-size: var(--main-title-text);
+    }
+  }
+
+  .product-description {
+    --sub-title-text: var(--base-text);
+    --line-height: var(--line-normal);
+    --margin-bottom: var(--x-small-spacing);
+
+    font-size: var(--sub-title-text);
+    text-align: center;
+
+    p {
+      margin: 0;
+      line-height: var(--line-height);
+    }
+
+    @media (min-width: 64rem) {
+      display: flex;
+      flex-flow: row nowrap;
+      --sub-title-text: var(--medium-text);
+    }
+  }
+
+  .release-date {
+    --release-font-size: var(--small-text);
+    --date-color: var(--gray);
+
+    margin: 0;
+    font-size: var(--release-font-size);
+    color: var(--date-color);
+  }
+
+  .about-product {
+    --link-text-color1: var(--white);
+    --link-text-color2: var(--blue-100);
+    --link-font-size: var(--xx-small-text);
+    --link-padding: var(--x-small-spacing);
+    --link-bg-color: var(--blue-100);
+    --link-border-color: var(--blue-100);
+    --link-margin: var(--base-spacing);
+
+    display: flex;
+    flex-flow: row nowrap;
+    gap: var(--link-margin);
+
+    a {
+      color: var(--link-text-color1);
+      border-radius: 50px;
+      background: var(--link-bg-color);
+      padding: var(--link-padding);
+      font-size: var(--link-font-size);
+      text-decoration: none;
+
+      &:nth-of-type(2) {
+        color: var(--link-text-color2);
+        border: 1px solid var(--link-border-color);
+        background: transparent;
+      }
+    }
+
+    @media (min-width: 64rem) {
+      --link-font-size: var(--x-small-text);
+
+      a {
+        font-size: var(--link-font-size);
+      }
+    }
+  }
+}
